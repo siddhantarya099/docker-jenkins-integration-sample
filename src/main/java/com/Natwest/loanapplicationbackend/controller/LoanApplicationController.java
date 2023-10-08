@@ -37,6 +37,6 @@ public class LoanApplicationController {
             return ResponseEntity.notFound().build();
         }
     }
-    
+
 
 }
