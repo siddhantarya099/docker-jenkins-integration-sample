@@ -37,11 +37,6 @@ public class LoanApplicationController {
             return ResponseEntity.notFound().build();
         }
     }
-
-    @DeleteMapping("/loan-history/{id}")
-    public ResponseEntity<Void> deleteLoan(@PathVariable String id) {
-        loanApplicationService.deleteLoan(id);
-        return ResponseEntity.noContent().build();
-    }
+    
 
 }
